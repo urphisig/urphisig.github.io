@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Phi Sigma Sigma</title>
+  <link rel="icon" type="image/png" href="images/letters.jpg"/>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="website.css">
+
+	
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<style type="text/css">
+
+		/* Slideshow container */
+		.slideshow-container {
+  			max-width: 90%;
+  			position: relative;
+  			margin: auto;
+		}
+
+		.mySlides {
+    		display: none;
+		}
+
+		/* Next & previous buttons */
+		.prev, .next {
+  			cursor: pointer;
+  			position: absolute;
+  			top: 45%;
+  			width: auto;
+  			margin-top: -22px;
+  			padding: 25px;
+  			color: white;
+  			font-weight: bold;
+  			font-size: 18px;
+  			transition: 0.6s ease;
+  			border-radius: 0 3px 3px 0;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+  			right: 0;
+  			border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+  			background-color: rgba(0,0,0,0.8);
+		}
+
+		/* Fading animation */
+		.fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 0.5s;
+  			animation-name: fade;
+  			animation-duration: 0.5s;
+		}
+
+		@-webkit-keyframes fade {
+  			from {opacity: .9} 
+  			to {opacity: 1}
+		}
+
+		@keyframes fade {
+  			from {opacity: .9} 
+  			to {opacity: 1}
+		}
+
+    .dot {
+      cursor:pointer;
+      height: 8px;
+      width: 8px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+	</style>
+
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JAVASCRIPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<script type="text/javascript">
+		
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+  			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+  			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+  			var i;
+  			var slides = document.getElementsByClassName("mySlides");
+  			var dots = document.getElementsByClassName("dot");
+  			if (n > slides.length) {slideIndex = 1}    
+  			if (n < 1) {slideIndex = slides.length}
+  			for (i = 0; i < slides.length; i++) {
+      			slides[i].style.display = "none";  
+  			}
+  			for (i = 0; i < dots.length; i++) {
+      			dots[i].className = dots[i].className.replace(" active", "");
+  			}
+  			slides[slideIndex-1].style.display = "block";  
+  			dots[slideIndex-1].className += " active";
+		}
+
+	</script>
+
+</head>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<body onload="currentSlide(1)">
+
+	<div class="title">
+		<center><img src="images/title.png"></center>
+	</div>
+
+	<div class="menuBar">
+    <center>
+    <ul style="list-style-type:none">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="aboutUs.html">ABOUT US</a></li>
+      <li><a href="allExec.html">EXEC</a></li>
+      <li><a href="members.html">MEMBERS</a></li>
+      <li><a href="recruitment.html">RECRUITMENT</a></li>
+      <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+    </ul>
+    </center>
+  </div>
+	
+	<!-- ~~~~~~~ SLIDE SHOW ~~~~~~~ -->
+	<div class="slideshow-container">
+
+  		<div class="mySlides fade">
+    		<img src="images/1.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/2.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/3.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/4.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/5.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/6.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/7.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/8.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/9.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/10.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/11.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/12.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/13.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/14.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/15.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/16.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/17.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/18.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/19.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/20.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/21.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/22.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/23.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/24.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/25.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/26.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/27.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/28.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/29.jpg" style="width:100%">
+  		</div>
+
+  		<div class="mySlides fade">
+    		<img src="images/30.jpg" style="width:100%">
+  		</div>
+
+  		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+    <span class="dot" onclick="currentSlide(12)"></span>
+    <span class="dot" onclick="currentSlide(13)"></span>
+    <span class="dot" onclick="currentSlide(14)"></span>
+    <span class="dot" onclick="currentSlide(15)"></span>
+    <span class="dot" onclick="currentSlide(16)"></span>
+    <span class="dot" onclick="currentSlide(17)"></span>
+    <span class="dot" onclick="currentSlide(18)"></span>
+    <span class="dot" onclick="currentSlide(19)"></span>
+    <span class="dot" onclick="currentSlide(20)"></span>
+    <span class="dot" onclick="currentSlide(21)"></span>
+    <span class="dot" onclick="currentSlide(22)"></span>
+    <span class="dot" onclick="currentSlide(23)"></span>
+    <span class="dot" onclick="currentSlide(24)"></span>
+    <span class="dot" onclick="currentSlide(25)"></span>
+    <span class="dot" onclick="currentSlide(26)"></span>
+    <span class="dot" onclick="currentSlide(27)"></span>
+    <span class="dot" onclick="currentSlide(28)"></span>
+    <span class="dot" onclick="currentSlide(29)"></span>
+    <span class="dot" onclick="currentSlide(30)"></span>
+  </div>
+	
+
+	<div class="icons">
+   <center>
+      <a id="icon" href="https://www.instagram.com/urphisig/"><img src="images/instaIcon.png" alt="instagram"></a>
+  
+      <a id="icon" href="https://www.facebook.com/PhiSigUofR/"><img src="images/facebookIcon.png" alt="facebook"></a>
+    </center>
+  </div>
+
+</body>
+
+</html>
