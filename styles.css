@@ -29,4 +29,6 @@ h2{
 
 .img-circle {
     border-radius: 50%;
+    height: 5%;
+    width: 5%;
 }
