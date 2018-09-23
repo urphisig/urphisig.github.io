@@ -27,6 +27,6 @@ h2{
     float: right;
 }
 
-.roundPhoto{
-	border-radius: 50%;
+.img-circle {
+    border-radius: 50%;
 }
