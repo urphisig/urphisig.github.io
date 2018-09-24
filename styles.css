@@ -30,7 +30,6 @@ h2{
 }
 
 .img-circle {
-    position: relative;
     float: center;
     border-radius: 50%;
 }
