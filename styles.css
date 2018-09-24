@@ -35,3 +35,11 @@ h2{
     border-radius: 25px;
     float:center;
 }
+
+.right{
+    float:right;
+}
+
+.left{
+    float:left;
+}
