@@ -40,3 +40,10 @@ h2{
 .left{
     float:left;
 }
+
+.sisterCard2{
+    transition: 0.3s;
+    margin: 1vmin;
+    padding: 1vmin;
+    width: 400px;
+}
